@@ -2,7 +2,7 @@
 import sys
 from typing import List
 from time import time
-from repair_report_part_1 import get_entries, sorted_list_contains, binary_search_contains
+from repair_report_part_1 import get_entries, sorted_list_contains
 
 
 def find_two_entries_summing_to_int(sorted_entries: List[int], target_sum: int):
