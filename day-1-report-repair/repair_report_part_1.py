@@ -4,7 +4,7 @@ from typing import List
 from time import time
 
 
-def binary_search_contains(sorted_entries: List[int], begin_index: int, end_index: int, target_int: int):
+def binary_search_contains(sorted_entries: List[int], begin_index: int, end_index: int, target_int: int) -> bool:
     if begin_index == end_index:
         return sorted_entries[begin_index] == target_int
     elif begin_index > end_index:
@@ -19,7 +19,7 @@ def binary_search_contains(sorted_entries: List[int], begin_index: int, end_inde
         return True
 
 
-def sorted_list_contains(sorted_entries: List[int], target: int):
+def sorted_list_contains(sorted_entries: List[int], target: int) -> bool:
     return binary_search_contains(sorted_entries, 0, len(sorted_entries), target)
 
 
